@@ -1,0 +1,6 @@
+
+# hide the node modules folder
+node_modules
+
+
+# General admin files 
