@@ -1,6 +1,7 @@
 
-# hide the node modules folder
+# hide folders
 node_modules
+stages
 
 
 # General admin files 
