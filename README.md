@@ -53,7 +53,7 @@ The technologies I have used are:
 * Step 2: The program will ask you a number of questions within your command line. Be sure to read the questions carefully, there are a few option confirmations scattered throughout. <br />
 * Step 3: Once you have completed your readme a file will be written to the same folder you downloaded this project to. . <br />
 * Step 4: To use the application you may visit my [Github repository](https://github.com/Samwakelam/09_README_GENERATOR_SLW ). There are no Github pages or live deployment for this application, I have included a video to view the application in use: . <br />
-[![Video Screenshot link](assets/Video-generator-v2.png)]("https://drive.google.com/file/d/12yullcLsSb1z3lRD-Ng2po-DzDCAqYma/preview")
+[![Video Screenshot link](assets/Video-generator-v2.png)](https://drive.google.com/file/d/1lVxBHDpbZPcnyYp6bJRqW_lN2yDbWOlg/preview)
 
 
 ## Improvements
