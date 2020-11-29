@@ -1,5 +1,4 @@
 
-
 # About A README
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
@@ -75,7 +74,21 @@ The technologies I have used are:
 ![Readme in preview](assets/README-v2.png)
 Screenshot was taken directly after command-line application was created, no additional tweaks.
 
+(Update: 29.11.2020) - I have changed the bulleted lists to output strings, this way the breaks are still recognised by the ' , ' are removed. 
 
+``` 
+const bulletList = (section) => {
+        if (section == undefined){
+            return "There is nothing to display at this time."
+        }else{
+            let outputStr = "";
+            for (let i = 0; i < section.length; i++) {
+                outputStr += `* ${section[i]}<br />`;
+            }
+            return outputStr;
+        }
+    }
+```
 
 
     
