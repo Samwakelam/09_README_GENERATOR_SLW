@@ -38,7 +38,7 @@ const generateReadme = (description, title, technologies, install, usage, improv
                      screenShot = "";
                   break;
                 case true:
-                     screenShot = '![alternative text](link here)';
+                     screenShot = '<br />![alternative text](link here)<br />';
             }
 
             outputStr +=`${stepString} <br />${screenShot}`;
