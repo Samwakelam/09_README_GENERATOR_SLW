@@ -13,11 +13,11 @@ const generateReadme = (description, title, technologies, install, usage, improv
         if (section == undefined){
             return "There is nothing to display at this time."
         }else{
-            let outputArray = [];
+            let outputStr = "";
             for (let i = 0; i < section.length; i++) {
-                outputArray.push(`* ${section[i]}<br />`);
+                outputStr += `* ${section[i]}<br />`;
             }
-            return outputArray;
+            return outputStr;
         }
     }
 
@@ -25,7 +25,7 @@ const generateReadme = (description, title, technologies, install, usage, improv
     // console.log("install length =", install.length);
 
     const instructionSteps = (section) => {
-        let outputArray = [];
+        let outputStr = "";
         for (let i = 0; i < section.length; i++){
             let stepString = `* Step ${section[i].Step}: ${section[i].instruct}.`;
             let screenShot;
@@ -38,12 +38,12 @@ const generateReadme = (description, title, technologies, install, usage, improv
                      screenShot = "";
                   break;
                 case true:
-                     screenShot = `![alternative text](link here)`
+                     screenShot = '![alternative text](link here)';
             }
 
-            outputArray.push(`${stepString} <br />${screenShot}`);
+            outputStr +=`${stepString} <br />${screenShot}`;
         };
-        return outputArray;
+        return outputStr;
     }
 
     // console.log("usage =", usage);
@@ -58,14 +58,14 @@ const generateReadme = (description, title, technologies, install, usage, improv
             return "There are no Updates at this time."
         }else{
             let screenShot;
-            let outputArray = [];
+            let outputStr = "";
             for (let i = 0; i < updates.length; i++) {
                 if (updates[i].screenshot == true){
                     screenShot = "![alternative text](link here)";
                 }
-                outputArray.push( `(Update: ${updates[i].date}) - ${updates[i].update} <br />${screenShot}`);
+                outputStr += `(Update: ${updates[i].date}) - ${updates[i].update} <br />${screenShot} <br />`;
             };
-            return outputArray;
+            return outputStr;
         };
     }
 
@@ -73,11 +73,11 @@ const generateReadme = (description, title, technologies, install, usage, improv
     // console.log("collaborators length=", collaborators.length);
 
     const listCollab = (collaborators) => {
-        let outputArray = [];
+        let outputStr = "";
         for (let i = 0; i < collaborators.length; i++) {
-            outputArray.push( `* ${collaborators[i].name} - ${collaborators[i].reason}`);
+            outputStr += `* ${collaborators[i].name} - ${collaborators[i].reason}`;
         }
-        return outputArray;
+        return outputStr;
     }
 
     // console.log("resources =",  resources);
@@ -87,11 +87,11 @@ const generateReadme = (description, title, technologies, install, usage, improv
     // console.log("contacts length=", contacts.length );
     
     const whereContact = (contacts) => {
-        let outputArray = [];
+        let outputStr = "";
         for (let i = 0; i < contacts.length; i++) {
-            outputArray.push( `* Name: ${contacts[i].name}  <br />Email: ${contacts[i].email} <br />Github Profile: ${contacts[i].profile}`);
+            outputStr += `* Name: ${contacts[i].name}  <br />Email: ${contacts[i].email} <br />Github Profile: ${contacts[i].profile}`;
         }
-        return outputArray;
+        return outputStr;
     }
 
     // console.log("license =", license);
